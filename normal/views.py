@@ -10,11 +10,11 @@ def ping(request):
 def users(request):
     # Parsowanie danych JSON z ciała żądania
     json_data = json.loads(request.body)
-    
+
     # Sprawdzenie, czy 'imie' znajduje się w danych żądania
     if 'imie' not in json_data:
         return JsonResponse({"message": "Niepoprawne dane zapytania"}, status=400)
-    
+
     # Obsługa różnych metod HTTP: POST i PUT
     if request.method == 'POST':
         return normal_helpers.logowanie(json_data)  # Wywołanie funkcji logowanie z pliku hepleprs

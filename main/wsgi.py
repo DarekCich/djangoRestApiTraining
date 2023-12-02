@@ -1,12 +1,7 @@
-"""
-WSGI config for main project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
-"""
-
+# Plik wsgi.py w Django jest wykorzystywany do obsługi aplikacji internetowych
+# za pomocą WSGI (Web Server Gateway Interface). WSGI to standardowy interfejs
+# komunikacyjny między aplikacją internetową napisaną w języku Python a serwerem internetowym.
+# Służy do obługi żądań synchronicznych
 import os
 
 from django.core.wsgi import get_wsgi_application

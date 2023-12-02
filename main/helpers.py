@@ -13,6 +13,5 @@ def sprawdz_imie(imie):
       dane = json.load(f)
       if imie in dane:
           return 0
-      else: 
+      else:
         return 1
-      

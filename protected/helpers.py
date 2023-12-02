@@ -13,17 +13,17 @@ def sprawdz_token(token):
 
         # Pobranie danych z tokenu (np. dane użytkownika)
         user_data = decoded_token.get('user')
-        
+
         # Sprawdzenie czy token nie wygasł
         token_exp = decoded_token.get('exp')
         if datetime.utcnow() > datetime.utcfromtimestamp(token_exp):
             return False  # Token wygasł
-        
+
         # Sprawdzenie czy użytkownik istnieje w bazie danych
         x = main_helpers.sprawdz_imie(user_data['imie'])
         if x != 0:
             return False  # Użytkownik nie istnieje
-        
+
         # Walidacja przeszła pomyślnie
         return True
 

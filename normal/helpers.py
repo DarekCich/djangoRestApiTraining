@@ -21,7 +21,7 @@ def logowanie(dane):
     tokenJWT = generuj_token(dane['imie'])
     return JsonResponse(
         {
-            "message": "Użytkownik o tej nazwie już istnieje.",
+            "message": "Użytkownik o tej nazwie istnieje w bazie danych.",
             "tokenJWT": tokenJWT
         },
         status=200

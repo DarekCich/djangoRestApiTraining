@@ -2,7 +2,7 @@ from django.urls import path
 from protected   import views
 
 # Lista wzorców adresów URL dla aplikacji Django.
-# Wzorzec adresu URL to definicja ścieżki URL oraz funkcji widoku, 
+# Wzorzec adresu URL to definicja ścieżki URL oraz funkcji widoku,
 # która ma być wywoływana w przypadku dopasowania danego żądania.
 
 urlpatterns = [

@@ -5,7 +5,7 @@ from django.apps import AppConfig
 
 class ProtectedConfig(AppConfig):
     # Pole default_auto_field
-    # Określa, który pole zostanie użyte jako klucz główny (primary key) 
+    # Określa, który pole zostanie użyte jako klucz główny (primary key)
     # w przypadku automatycznie generowanych pól (np. w modelach).
     default_auto_field = 'django.db.models.BigAutoField'
 
